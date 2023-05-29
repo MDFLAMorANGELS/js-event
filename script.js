@@ -34,8 +34,8 @@ const editBtn2 = document.querySelector("body > main > div > div > div > div:nth
 
 editBtn2.addEventListener("click", function(){
     if (card2.style.color === ''){
-        card2.style.color = 'red' ;
-    }else if(card2.style.color === 'red'){
+        card2.style.color = 'green' ;
+    }else if(card2.style.color === 'green'){
         card2.style.color = '' ;
     }
 });
@@ -67,7 +67,7 @@ function handleCardHover(card) {
         image.style.transform = 'scale(0.2)';
     }else{
         text.classList.toggle('');
-        image.style.transform = '';
+        image.style.transform = 'scale(1)';
     }
   });
 }
